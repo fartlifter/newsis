@@ -149,7 +149,7 @@ with col2:
     end_dt = datetime.combine(end_date, end_time).replace(tzinfo=ZoneInfo("Asia/Seoul"))
 
 group_labels = list(keyword_groups.keys())
-default_groups = ['시경', '종혜북']
+default_groups = ['시경', '혜화도봉']
 selected_groups = st.multiselect("📚 지역 그룹 선택", group_labels, default=default_groups)
 
 selected_keywords = []
