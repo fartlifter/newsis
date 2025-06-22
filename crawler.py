@@ -54,7 +54,7 @@ def extract_media_name(url):
             "imnews": "MBC", "jtbc": "JTBC", "ichannela": "채널A", "tvchosun": "TV조선",
             "mk": "매경", "sedaily": "서경", "hankyung": "한경", "news1": "뉴스1",
             "newsis": "뉴시스", "yna": "연합", "mt": "머투", "weekly": "주간조선",
-            "biz.chosun": "조선비즈", "fnnews": "파뉴"
+            "biz.chosun": "조선비즈", "fnnews": "파뉴", "biz.heraldcorp": "헤경"
         }
         if composite_key in media_mapping:
             return media_mapping[composite_key]
@@ -217,6 +217,7 @@ if st.button("✅ [단독] 뉴스 수집 시작"):
 selected_articles = []
 for idx, result in enumerate(st.session_state["articles"]):
     is_selected = st.checkbox(f"△{result['매체']} / {result['제목']}", key=f"chk_{idx}")
+    st.markdown(f"[🔗 원문 보기]({result['링크']})", unsafe_allow_html=True)  # ← 하이퍼링크 추가
     st.caption(result["날짜"])
     if result["필터일치"]:
         st.write(f"**일치 키워드:** {result['필터일치']}")
