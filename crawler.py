@@ -132,7 +132,7 @@ keyword_groups = {
 
 # === Streamlit UI ===
 st.title("📰 단독기사 수집기_뉴시스 사건팀")
-st.markdown("✅ [단독] 기사를 수집하고 선택한 키워드가 본문에 포함된 기사만 필터링합니다. 선택한 기사만 최하단 복사용 박스에 표시됩니다. 업데이트:250627")
+st.markdown("✅ [단독] 기사를 수집하고 선택한 키워드가 본문에 포함된 기사만 필터링합니다. 선택한 기사만 최하단 복사용 박스에 표시됩니다. 업데이트: 250627")
 
 now = datetime.now(ZoneInfo("Asia/Seoul"))
 today = now.date()
