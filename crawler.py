@@ -54,7 +54,7 @@ def extract_media_name(url):
             "imnews": "MBC", "jtbc": "JTBC", "ichannela": "채널A", "tvchosun": "TV조선",
             "mk": "매경", "sedaily": "서경", "hankyung": "한경", "news1": "뉴스1",
             "newsis": "뉴시스", "yna": "연합", "mt": "머투", "weekly": "주간조선",
-            "biz.chosun": "조선비즈", "fnnews": "파뉴", "biz.heraldcorp": "헤경"
+            "biz.chosun": "조선비즈", "fnnews": "파뉴", "tf.co": "더팩트", "biz.heraldcorp": "헤경"
         }
         if composite_key in media_mapping:
             return media_mapping[composite_key]
@@ -132,7 +132,7 @@ keyword_groups = {
 
 # === Streamlit UI ===
 st.title("📰 단독기사 수집기_뉴시스 사건팀")
-st.markdown("✅ [단독] 기사를 수집하고 선택한 키워드가 본문에 포함된 기사만 필터링합니다. 선택한 기사만 최하단 복사용 박스에 표시됩니다. 업데이트:250622 1815")
+st.markdown("✅ [단독] 기사를 수집하고 선택한 키워드가 본문에 포함된 기사만 필터링합니다. 선택한 기사만 최하단 복사용 박스에 표시됩니다. 업데이트:250627")
 
 now = datetime.now(ZoneInfo("Asia/Seoul"))
 today = now.date()
